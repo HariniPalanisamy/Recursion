@@ -1,0 +1,14 @@
+// For small numbers
+#include<stdio.h>
+
+int fact(int num);
+int main() {
+    int n=17;
+    int funReturn = fact(n);
+    printf("%d",funReturn);
+}
+
+int fact(int n){
+    if(n == 0 || n == 1){ return 1; }
+    else{ return n * fact(n-1); }
+}
