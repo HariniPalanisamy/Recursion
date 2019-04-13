@@ -46,3 +46,18 @@ int multiply(int n1,int n2){
 -----------------------------------------------------------------------------------
 // 4. (I'm not clear with the question)
 -----------------------------------------------------------------------------------
+// 5. Find Greatest Common Divisor (GCD) of 2 numbers using recursion.
+
+#include<stdio.h>
+
+int GCD(int num1,int num2);
+int main() {
+   int n1=12,n2=54;
+   printf("%d",GCD(n1,n2));
+}
+
+int GCD(int n1,int n2){
+    if(n2==0){ return n1; }
+    return GCD(n2,n1%n2);
+}
+---------------------------------------------------------------------------------
