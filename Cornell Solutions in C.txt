@@ -61,3 +61,29 @@ int GCD(int n1,int n2){
     return GCD(n2,n1%n2);
 }
 ---------------------------------------------------------------------------------
+// 6.i. Write a recursive function to reverse a string.
+
+#include<stdio.h>
+#include<string.h>
+
+void reverse(char word[],int l,int curr);
+int main() {
+   char str[] = "welcome";
+   reverse(str,strlen(str)-1,strlen(str)-1);
+}
+
+void reverse(char str[],int len,int current){
+    int x = len - current;
+    char tmp='\0';
+    if((len+1)/2 == current){
+       printf("%s\n",str);
+    }
+    else{
+        tmp = str[x];
+        str[x] = str[current];
+        str[current] = tmp;
+        current = current - 1;
+        reverse(str,len,current);
+    }
+}
+-------------------------------------------------------------------------------
