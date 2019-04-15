@@ -75,7 +75,7 @@ int main() {
 void reverse(char str[],int len,int current){
     int x = len - current;
     char tmp='\0';
-    if((len+1)/2 == current){
+    if((len/2) == current){
        printf("%s\n",str);
     }
     else{
