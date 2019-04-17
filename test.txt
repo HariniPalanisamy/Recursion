@@ -1,8 +1,7 @@
 15/04/2019 to 21/04/2019
-Area	 	Task
+Area	 	    Task
 --------------------------------------------------
-History		Class 7,8
-Recursion		Cornell PDF
-HackerEarth	3 programs
-Science		Revision(6,7,8,9)
-Maths		Class 7,8
+History		    Class 6,7,8
+Recursion	    Cornell PDF - 3 remaining
+HackerEarth	    3 programs - 2 remaining
+Maths		    Class 7,8
