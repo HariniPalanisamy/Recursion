@@ -87,3 +87,42 @@ void reverse(char str[],int len,int current){
     }
 }
 -------------------------------------------------------------------------------
+// 6.ii. Write a recursive function to reverse the words in a string, i.e., 
+// ”cat is running” becomes ”running is cat"
+
+#include<stdio.h>
+#include<string.h>
+
+void printStr(char str[],int st,int ed);
+int revStr(char str[],int start,int end);
+
+int main() {
+    char str[] = "sun rises in the east";
+    revStr(str,strlen(str),strlen(str));   
+}
+
+void printStr(char str[],int a,int b){
+    for(int i=a+1;i<b;i++){
+        printf("%c",str[i]);
+    }
+    printf(" ");
+}
+
+int revStr(char str[],int start,int end){
+    if(start == 0){
+        printStr(str,start-1,end);
+         return 0;
+    }
+    else{
+        if(str[start] == ' ' && start >= 1){
+            printStr(str,start,end);
+            end = start;
+            start--;
+            revStr(str,start,end);
+        }else{
+            start--;
+            revStr(str,start,end);
+        }
+    }
+}
+----------------------------------------------------------------------------
