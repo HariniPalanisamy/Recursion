@@ -114,7 +114,7 @@ int revStr(char str[],int start,int end){
          return 0;
     }
     else{
-        if(str[start] == ' ' && start >= 1){
+        if(str[start] == ' '){
             printStr(str,start,end);
             end = start;
             start--;
